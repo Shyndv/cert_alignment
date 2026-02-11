@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certification Alignment Matrix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
 
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #1e293b;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f1f5f9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0f172a;
+      color: white;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        padding: 10px;
+        border: none;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        color: #475569;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Certification Alignment Matrix</h1>
+  <p>Department Skills and Professional Certification Mapping</p>
+</header>
+
+<div class="container">
+  <h2>Certification Table</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Department</th>
+        <th>Task / Skill Requirement</th>
+        <th>Certification Vendor</th>
+        <th>Certification Name</th>
+        <th>Certification Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Department">IT Department</td>
+        <td data-label="Task / Skill Requirement">Network installation & configuration</td>
+        <td data-label="Certification Vendor">Cisco</td>
+        <td data-label="Certification Name">CCNA</td>
+        <td data-label="Certification Level">Associate</td>
+      </tr>
+      <tr>
+        <td data-label="Department">IT Department</td>
+        <td data-label="Task / Skill Requirement">Server administration</td>
+        <td data-label="Certification Vendor">Microsoft</td>
+        <td data-label="Certification Name">Windows Server Hybrid Administrator Associate</td>
+        <td data-label="Certification Level">Associate</td>
+      </tr>
+      <tr>
+        <td data-label="Department">IT Department</td>
+        <td data-label="Task / Skill Requirement">Cloud deployment & management</td>
+        <td data-label="Certification Vendor">AWS</td>
+        <td data-label="Certification Name">AWS Solutions Architect – Associate</td>
+        <td data-label="Certification Level">Associate</td>
+      </tr>
+      <tr>
+        <td data-label="Department">IT Department</td>
+        <td data-label="Task / Skill Requirement">Cybersecurity fundamentals</td>
+        <td data-label="Certification Vendor">CompTIA</td>
+        <td data-label="Certification Name">Security+</td>
+        <td data-label="Certification Level">Intermediate</td>
+      </tr>
+      <tr>
+        <td data-label="Department">IT Department</td>
+        <td data-label="Task / Skill Requirement">Hardware troubleshooting</td>
+        <td data-label="Certification Vendor">CompTIA</td>
+        <td data-label="Certification Name">A+</td>
+        <td data-label="Certification Level">Beginner</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  © 2026 Certification Alignment | Created by Student
+</footer>
+
+</body>
+</html>
